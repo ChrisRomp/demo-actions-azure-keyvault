@@ -1,11 +1,15 @@
 #!/bin/bash
 set -e
 
+# This script automates the process of setting up a resource group, a key vault,
+# and secrets within the key vault in Azure. It also assigns the 'Key Vault Secrets User'
+# role to a specified service principal.
+
 # Parameters
-resourceGroupName="DEMO-rg-name"
-defaultLocaton="westus3"
-servicePrincipalName="service-principal-name"
-keyVaultName="key-vault-name"
+resourceGroupName="DEMO-rg-name"  # The name of the resource group to create or use
+defaultLocaton="westus3"  # The default location for the resource group
+servicePrincipalName="service-principal-name"  # The name of the *existing* service principal
+keyVaultName="key-vault-name"  # The name of the key vault
 
 # Log in first: az login --use-device-code
 
