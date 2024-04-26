@@ -23,9 +23,9 @@ Documentation:
 
 The Action runs manully from the `Actions` tab in this repository.
 
-The Action steps are defined in [`get-azure-secrets.yml`](.github/workflows/azure-get-secrets.yml).
-
 ### Actions Steps
+
+The Action steps are defined in [`get-azure-secrets.yml`](.github/workflows/azure-get-secrets.yml).
 
 1. **Azure Login:** Logs into Azure CLI with Federated Credentials (OIDC). This eliminates the need to manage a client ID and secret.
 1. **Get Secrets:** This will fetch additional secrets from Azure Key Vault, using the identity from the Login step.
