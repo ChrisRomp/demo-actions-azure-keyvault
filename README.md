@@ -36,8 +36,8 @@ The Action steps are defined in [`get-azure-secrets.yml`](.github/workflows/azur
 The log will show a result, one of a plaintext `secret1` value and the other of a masked `secret2` value:
 
 ```text
-Secret1: value1
-Secret2: ***
+secret1: value1
+secret2: ***
 ```
 
 ## Infrastructure Configuration
