@@ -1,0 +1,19 @@
+{
+    "name": "Default Linux Universal",
+    "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
+    "remoteUser": "codespace",
+    "features": {
+        "ghcr.io/devcontainers/features/azure-cli:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot",
+                "Github.copilot-chat",
+                "GitHub.vscode-github-actions",
+                "ms-azuretools.vscode-bicep"
+            ]
+        }
+    },
+    "postCreateCommand": "echo 'alias tf=terraform' >> ~/.bash_aliases"
+}
